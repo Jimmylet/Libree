@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>Libree - Accueil</title>
+        <title>Accueil - Libree</title>
     <link rel="stylesheet" href="css/styles.css">
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,7 +14,7 @@
     <nav class="menu">
         <h2 role="heading" aria-level="2" class="menu__title">Navigation principale</h2>
         <a class="menu__logo-link" href="index.html">
-            <img src="./img/svg/libree.svg" class="menu__logo" alt="Libree" width="75px" height="64px">
+            <img src="./img/svg/libree.svg" class="menu__logo" alt="Libree" width="75" height="64">
         </a>
         <ul class="menu__list">
             <li class="menu__item">
@@ -30,46 +30,55 @@
                 <a href="html/about.html" class="menu__item-link">A propos</a>
             </li>
             <li class="menu__item">
-                <a href="html/connexion.html" class="menu__item-link">Connexion</a>
+                <a href="html/connexion.html" class="menu__item-link menu__item-connexion">Connexion</a>
             </li>
             <li class="menu__item">
-                <a href="html/inscription.html" class="menu__item-link">S’inscrire</a>
+                <a href="html/inscription.html" class="menu__item-link menu__item-inscription">S’inscrire</a>
             </li>
         </ul>
     </nav>
     <span class="header__main-span">Libree, pour que la lecture redevienne un partage.</span>
     <span class="header__second-span">Lisez des histoires d'auteurs inconnus et commentez-les !</span>
-    <a href="#" class="header__button-hasard">Une histoire au hasard</a>
+    <div class="header__contener__button-hasard">
+        <a href="#" class="header__button-hasard">Une histoire au hasard</a>
+    </div>
 </header>
 
 <div class="contener-top">
     <section class="author-top">
         <h2 class="author-top__title">Auteur à la une</h2>
         <article class="index-article author-top-article">
-            <h3 class="author-top-article__title">Michael Jackson</h3>
             <img class="author-top-article__img" src="./img/png/profil.png" alt="Photo de Michael Jackson" width="224" height="300">
-            <a href="#" class="author-top-article__link author-top-article__bio">Biographie</a>
-            <a href="#" class="author-top-article__link author-top-article__history" >Lire ses histoires</a>
+            <div class="author-top-article__contener">
+                <h3 class="author-top-article__title">Michael Jackson</h3>
+                <p class="author-top-article__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="author-top-article__link-contener">
+                    <a href="#" class="author-top-article__link author-top-article__bio">Biographie</a>
+                    <a href="#" class="author-top-article__link author-top-article__history" >Lire ses histoires</a>
+                </div>
+            </div>
         </article>
     </section>
     <section class="history-top">
         <h2 class="history-top__title">Histoires à succès</h2>
         <article class="index-article history-top-article">
-            <ul class="history-top-list">
-                <li class="history-top-item">
-                    <h3 class="history-top-item__title">Le petit marin</h3>
-                    <img class="history-top-item__img" src="./img/png/img_profil.png" alt="Image de l'histoire « Le petit marin »" width="182" height="289">
-                    <a href="#" class="history-top-item__link">Lire l'histoire</a>
+            <ul class="history__top-list">
+                <li class="history__top-item">
+                    <h3 class="history__top-item__title">Le petit marin</h3>
+                    <img class="history__top-item__img" src="./img/png/img_profil.png" alt="Image de l'histoire « Le petit marin »" width="182" height="289">
+                    <a href="#" class="history__top-item__link">Lire l'histoire</a>
                 </li>
-                <li class="history-top-item">
-                    <h3 class="history-top-item__title">Le petit marin</h3>
-                    <img class="history-top-item__img" src="./img/png/img_profil.png" alt="Image de l'histoire « Le petit marin »" width="182" height="289">
-                    <a href="#" class="history-top-item__link">Lire l'histoire</a>
+                <li class="history__top-item">
+                    <h3 class="history__top-item__title">Le petit marin</h3>
+                    <img class="history__top-item__img" src="./img/png/img_profil.png" alt="Image de l'histoire « Le petit marin »" width="182" height="289">
+                    <a href="#" class="history__top-item__link">Lire l'histoire</a>
                 </li>
-                <li class="history-top-item">
-                    <h3 class="history-top-item__title">Le petit marin</h3>
-                    <img class="history-top-item__img" src="./img/png/img_profil.png" alt="Image de l'histoire « Le petit marin »" width="182" height="289">
-                    <a href="#" class="history-top-item__link">Lire l'histoire</a>
+                <li class="history__top-item">
+                    <h3 class="history__top-item__title">Le petit marin</h3>
+                    <img class="history__top-item__img" src="./img/png/img_profil.png" alt="Image de l'histoire « Le petit marin »" width="182" height="289">
+                    <a href="#" class="history__top-item__link">Lire l'histoire</a>
                 </li>
             </ul>
         </article>
@@ -82,7 +91,7 @@
     </div>
     <div class="footer-copyright">
                 <span class="footer-copyright__content">
-                    © <a href="#" class="footer-copyright__link"></a>Jimmy Letecheur
+                    © <a href="#" class="footer-copyright__link">Jimmy Letecheur</a>
                 </span>
     </div>
 </footer>
