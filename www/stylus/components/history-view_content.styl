@@ -1,0 +1,60 @@
+.history-article
+  &__download-ebook
+  &__download-pdf
+    display inline-block
+    height 4rem
+    width 30rem
+    color main-white
+    font-size 1.6rem
+    background-color blue-light
+    text-transform uppercase
+    border-radius 10rem
+    line-height 4rem
+    text-align center
+    text-decoration none
+  &__download-ebook
+    background-color blue-light
+    &:hover
+      background-color blue-light - 20%
+  &__download-pdf
+    background-color button-pdf-color
+    &:hover
+      background-color button-pdf-color - 20%
+
+
+.chapitre
+  &__contener
+    &__title
+      display none
+  &__title
+    font-family camptonfont
+    font-weight bold
+    font-size 2.6rem
+    &:after
+      background-color: dark-black
+      content: '\a0'
+      flex-grow: 1
+      height: 2px
+      position: relative
+      padding-right 2rem
+      top: 0.53em
+      margin-left 2rem
+      margin-right 3.3rem
+  &__paragraph
+    color light-black
+    font-size 2.4rem
+    line-height 2.6rem
+    margin-top 3rem
+  &__read
+    font-size 1.4rem
+    color light-black
+    text-decoration none
+    &:after
+      content ""
+      display inline-block
+      background-image url(../img/svg/read_deployed.svg)
+      width 2.7rem
+      height 2.7rem
+      position absolute
+      right -3.4rem
+      top -0.4rem
