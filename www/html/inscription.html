@@ -38,18 +38,25 @@
 					</li>
 				</ul>
 			</nav>
-			<span class="header__main-span">Connectez-vous à votre Libree !</span>
-			<span class="header__second-span">Nous sommes heureux de vous revoir.</span>
+			<span class="header__main-span">Rejoignez-nous sur Libree, votre bibliothèque d'histoire gratuite !</span>
+			<span class="header__second-span">Vivez de folles aventures et partagez les votres.</span>
 		</header>
 
-		<section class="content-connexion">
-			<div class="connexion">
-			<h2 class="connexion__title" role="heading" aria-level="2">Connectez-vous</h2>
-				<form action="" class="connexion__form">
-					<input type="text" required placeholder="Votre nom d'utilisateur" class="connexion__input">
-					<input type="password" placeholder="Votre mot de passe" required class="connexion__input">
-					<button class="connexion__submit">Se connecter</button>
-					<a href="connexion_forgot.html" class="connexion__forgot">Mot de passe oublié ?</a>
+		<section class="content-connexion content-inscription">
+			<div class="connexion connexion-inscription">
+			<h2 class="connexion__title" role="heading" aria-level="2">Inscrivez-vous sur <span class="connexion__title-bold">Libree</span></h2>
+				<form action="" method="post" class="connexion__form">
+					<label for="name" class="connexion__label">Indiquez votre nom&nbsp;:</label>
+					<input type="text" required placeholder="Ex&nbsp;: Hugo Cabret" name="name" id="name" class="connexion__input">
+					<label for="username" class="connexion__label">Choisissez un nom d'utilisateur&nbsp;:</label>
+					<input type="text" required placeholder="Ex&nbsp;: Drakt" name="username" id="username" class="connexion__username connexion__input">
+					<label for="email" class="connexion__label">Indiquez votre adresse email&nbsp;:</label>
+					<input type="text" required placeholder="Ex&nbsp;: bingoto@@gmail.com" name="email" id="email" class="connexion__input">
+					<label for="username" class="connexion__label">Choisissez un mot de passe&nbsp;:</label>
+					<input type="password" placeholder="8 caractères min." required class="connexion__password connexion__input">
+					<label for="pswrepeat" class="connexion__label">Répetez votre mot de passe&nbsp;:</label>
+					<input type="password" required placeholder="Ecrivez à nouveau votre mot de passe" name="pswrepeat" id="pswrepeat" class="connexion__input">
+					<button class="connexion__submit">S'inscrire</button>
 				</form>
 			</div>
 		</section>
