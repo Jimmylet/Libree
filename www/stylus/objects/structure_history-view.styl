@@ -1,5 +1,4 @@
 .history-view
-  padding 0 1rem
   &__title
     display none
 
@@ -10,6 +9,9 @@
     margin-bottom 5rem
   &__download-ebook
     margin-right 2rem
+
+.history-content-text
+  padding 0 2rem
 
 .chapitre
   max-width 86.5rem
@@ -25,3 +27,85 @@
     position absolute
     right 3.3rem
     top -0.1rem
+  &__contener-paragraph
+    height 0
+    overflow hidden
+
+.déplié
+  height auto
+  overflow visible
+
+/******/
+/*BLOC COMMENT*/
+/******/
+
+.comments-content
+  height 79rem
+  padding 5rem 2rem
+  &__title
+    display none
+
+.comments__block-text-area
+  &:after
+    content: "";
+    display: block;
+    clear: both;
+
+.comments
+  position: relative
+  max-width 75rem
+  margin 0 auto
+  padding-bottom 1.5rem
+  &__head-section
+    padding 0 2rem
+    &__number
+      display inline-block
+    &__pseudo
+      float: right
+  &__text-area
+    width 80%
+    height 7rem
+    resize none
+    padding 1.5rem 1.5rem
+    margin 3rem 3rem 0 0
+    position: absolute
+    right: 0
+    &__img
+      margin-top: 2.7rem
+      margin-left 2rem
+      margin-right 1.5rem
+
+.comments__block__head
+  margin-top 3rem
+  color comment-title-color
+
+.comments__block
+  margin-left 2rem
+  &:after
+    content: "";
+    display: block;
+    clear: both;
+  &__img
+    float: left
+
+.comments__block__pseudo
+.comments__block__comment
+  margin-left 2rem
+  display inline-block
+
+.comments__block__time
+  margin-left .5rem
+
+.comments__block-text-area
+  margin-bottom 6rem
+  &:after
+    content: ""
+    display: block
+    clear: both
+
+.comments__load-more
+  margin: 3rem auto;
+
+.chapitre__temp-contener
+  text-align center
+  margin-bottom: 6rem

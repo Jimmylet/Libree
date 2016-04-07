@@ -58,3 +58,82 @@
       position absolute
       right -3.4rem
       top -0.4rem
+
+/******/
+/*BLOC COMMENT*/
+/******/
+
+.comments-content
+  background-color section-comments-color
+
+.comments
+  border-radius .5rem
+  background-color main-white
+  &__head-section
+    border-radius .5rem .5rem 0 0
+    background-color comment-grey-color
+    height 7rem
+    &__number
+      color comment-title-color
+      text-transform: uppercase
+      font-weight: normal
+      font-size: 2rem
+      line-height 7rem
+    &__pseudo
+      color comment-title-color + 20%
+      font-size: 1.6rem
+      line-height 7rem
+  &__text-area
+    border-radius .5rem
+    background-color comment-grey-color
+    border 1px solid comment-grey-color - 20%
+    font-family camptonfont
+    font-weight 100
+    font-size 1.5rem
+    color text-area-color
+    &:focus
+      border 1px solid dark-black
+      appearance none
+
+.comments__block__pseudo
+  font-size: 1.5rem
+
+.comments__block__time
+  color text-area-color
+
+.comments__paragraph
+  font-family: proximanovafont
+  font-weight: 100
+  margin-top: .5rem
+
+.comments__load-more
+  text-transform uppercase
+  font-weight bold
+  font-size 2rem
+  height 6.1rem
+  width 39.3rem
+  display block
+  text-align center
+  line-height 6.1rem
+  border 2px solid blue-light
+  color light-black
+  text-decoration none
+  &:hover
+    background-color blue-light
+    color main-white
+
+
+/***** Histoires en cours d'écriture *******/
+
+.chapitre__temp
+  font-size: 2rem
+  color: color-load-text
+  &:before
+    content: ''
+    display block
+    width 22.4rem
+    height: 3.9rem
+    background-image url(../img/svg/history_load.svg)
+    background-repeat no-repeat
+    background-position center
+    margin: 6rem auto 1rem auto
