@@ -5,6 +5,8 @@
  * Date : 17/05/16
  */
 
+
+
 /*
  * TODO// Ne pas oublier d'inclure ces deux lignes quand c'est nécessaire
  *
@@ -33,4 +35,4 @@ $controller = $container->make($controller_name);
 
 $data = call_user_func([$controller, $a]);*/
 
-include('views/homepage.php');
+include('views/view.php');
